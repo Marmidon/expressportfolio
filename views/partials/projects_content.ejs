@@ -1,0 +1,54 @@
+<!--Mykyta Stenko Personal ExpressPortfolio Assignment 3-->
+<!--Project images-->
+<div class="container" ng-app="projects" ng-cloack>
+    <div class="projectClass" id="aboutBox" ng-controller="ProjectsController">
+        <h1><%= title %></h1>
+        <div class="list-group">
+            <!-- Project Survey !-->
+            <div id="Project">
+            <li class="list-group-item" id="projectsThumbnail" ng-click="projects[1].viewProject()"><b>Survey Website</b> <br><p ng-hide="projects[1].viewBoolean"> Used AngularJS, Node.js, Express and Bootstrap... <span ng-hide="projects[1].viewBoolean">(Click to expand)</span> </p></li>
+            <li class="list-group-item" id="projectsDescription" ng-show="projects[1].viewBoolean" ng-cloak>
+                <ul class="row first">
+                    <li class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                        <img class='img-responsive' src="../images/Survey1.jpg" data-bsp-large-src="../images/Survey1.jpg">
+                    </li>
+                    <li class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                        <img class='img-responsive'  src="../images/Survey2.jpg">
+                    </li>
+                    <li class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                        <img class='img-responsive' src="../images/Survey3.jpg">
+                    </li>
+                    <li class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                        <img class='img-responsive' src="../images/Survey4.jpg">
+                    </li>
+                </ul>
+                <p>Click on images to view</p>
+                <p>Used AngularJS, Node.js, Express and Bootstrap to create responsive single page application survey website connected to cloud NoSQL database. Allowed users to vote on a survey, create and change surveys, view statistics and responses.</p>
+            </li>
+            </div>
+            <!-- Project Browser game !-->
+            <div id="Project">
+            <li class="list-group-item" id="projectsThumbnail" ng-click="projects[2].viewProject()"><b>Browser Game</b> <br><p ng-hide="projects[2].viewBoolean"> Developed using HTML5, CSS3, jQuery, JavaScript... <span ng-hide="projects[2].viewBoolean">(Click to expand)</span> </p></li>
+            <li class="list-group-item" id="projectsDescription" ng-show="projects[2].viewBoolean" ng-cloak>
+                <ul class="row first">
+                    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                        <img class='img-responsive' src="../images/Game1.jpg">
+                    </li>
+                    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                        <img class='img-responsive' id="#myPhoto1"  src="../images/Game2.jpg">
+                    </li>
+                    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                        <img class='img-responsive' id="#myPhoto1"  src="../images/Game3.jpg">
+                    </li>
+                    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                        <img class='img-responsive' id="#myPhoto1"  src="../images/Game4.jpg">
+                    </li>
+                </ul>
+                <p>Click on images to view</p>
+                <p>Designed and created web browser game. Developed using HTML5, CSS3, jQuery, JavaScript.</p>
+            </li>
+            </div>
+        </div>
+    </div>
+</div>
+
